@@ -107,32 +107,22 @@ A modern web application to track your job applications built with React and Sup
 ## Pages
 
 ### Dashboard
-Overview with statistics and recent applications. See profile information and quick stats.
+Overview with statistics, recent applications, and profile information with quick stats.
 
 ### Jobs
 Comprehensive list of all job applications with advanced filtering, search, and dual-view modes (table/grid).
-See `JOBS_PAGE_FEATURES.md` for detailed documentation.
 
 ### Interviews
 Complete interview management system for tracking all interviews from preparation to follow-up.
-See `INTERVIEWS_PAGE_FEATURES.md` for detailed documentation.
 
 ### Survey Requests
 Complete survey management system for tracking feedback and review requests from companies.
-See `SURVEY_PAGE_FEATURES.md` for detailed documentation.
 
 ### Events
 Track career fairs, networking events, application deadlines, and follow-up reminders.
-See `EVENTS_PAGE_FEATURES.md` for detailed documentation.
 
-## Additional Documentation
-
-- `DASHBOARD_UPDATE.md` - Dashboard and profile setup instructions
-- `JOBS_PAGE_FEATURES.md` - Detailed Jobs page feature documentation
-- `INTERVIEWS_PAGE_FEATURES.md` - Detailed Interviews page feature documentation
-- `SURVEY_PAGE_FEATURES.md` - Detailed Survey Request page feature documentation
-- `EVENTS_PAGE_FEATURES.md` - Detailed Events page feature documentation
-- `RESUME_PAGE_FEATURES.md` - Resume management feature documentation
+### Resume
+Manage and organize your resumes for different job applications.
 
 ## License
 
