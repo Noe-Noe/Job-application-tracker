@@ -6,6 +6,7 @@ A modern web application to track your job applications built with React and Sup
 
 - 🔐 User authentication (Sign up/Login)
 - 📝 Track job applications with details like company, position, status
+- 🌐 **Browser Extension**: Save jobs from any website with one click
 - 📊 View all applications in a beautiful dashboard
 - 📅 Interview tracking and management system
 - 📆 Events tracking for career fairs, deadlines, and reminders
@@ -14,12 +15,25 @@ A modern web application to track your job applications built with React and Sup
 - 📈 Statistics and insights
 - 🎨 Modern, responsive UI with Tailwind CSS
 
+## 🚀 Browser Extension
+
+**NEW!** Install the browser extension to save job applications from any job board (LinkedIn, Indeed, Glassdoor, etc.) directly to your dashboard with a single click.
+
+### Quick Start:
+1. Load the `extension` folder in your browser
+2. Configure it with your API token from Settings
+3. Visit any job posting page
+4. Click "Save to Job Tracker"
+
+📖 **[Full Extension Documentation](./EXTENSION_README.md)**
+
 ## Tech Stack
 
 - **Frontend**: React + Vite
-- **Backend**: Supabase (Database + Auth)
+- **Backend**: Supabase (Database + Auth) + Vercel Serverless Functions
 - **Styling**: Tailwind CSS
 - **Routing**: React Router
+- **Extension**: Vanilla JavaScript (Chrome/Firefox compatible)
 
 ## Setup
 

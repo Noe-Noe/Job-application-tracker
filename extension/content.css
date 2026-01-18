@@ -1,0 +1,112 @@
+/* Floating Save Button */
+#job-tracker-save-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#job-tracker-save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+#job-tracker-save-btn:active {
+  transform: translateY(0);
+}
+
+.job-tracker-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-tracker-btn-content svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
+
+/* Loading state */
+#job-tracker-save-btn.job-tracker-loading {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.8;
+  cursor: wait;
+}
+
+.job-tracker-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: job-tracker-spin 0.8s linear infinite;
+}
+
+@keyframes job-tracker-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Success state */
+#job-tracker-save-btn.job-tracker-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* Error notification */
+.job-tracker-error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000000;
+  background: #ef4444;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  animation: job-tracker-slide-in 0.3s ease;
+}
+
+@keyframes job-tracker-slide-in {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #job-tracker-save-btn {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .job-tracker-error {
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    max-width: calc(100% - 32px);
+  }
+}
